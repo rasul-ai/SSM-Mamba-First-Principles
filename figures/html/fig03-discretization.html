@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Figure 3: Discretization and the step size</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+</style>
+</head>
+<body>
+<div style="position: relative; width: 1000px; height: 524px; background: #FFFFFF; font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif; color: #15171C; overflow: hidden">
+<div style="position: absolute; left: 48px; top: 120px; width: 440px; height: 312px; background: #F4F5F7; border-radius: 12px"></div>
+<div style="position: absolute; left: 512px; top: 120px; width: 440px; height: 312px; background: #F4F5F7; border-radius: 12px"></div>
+<svg role="img" aria-label="A smooth signal sampled every small step, held between samples" width="400" height="230" viewBox="0 0 400 230" style="position: absolute; left: 68px; top: 164px; width: 400px; height: 230px; overflow: visible">
+<line x1="0" y1="205" x2="400" y2="205" stroke="#C9CDD4" stroke-width="1.5"/>
+<path d="M 0 99.8 L 4 92.2 L 8 85.8 L 12 80.7 L 16 77.0 L 20 74.6 L 24 73.4 L 28 73.3 L 32 74.1 L 36 75.5 L 40 77.4 L 44 79.3 L 48 81.2 L 52 82.7 L 56 83.7 L 60 84.1 L 64 83.6 L 68 82.3 L 72 80.2 L 76 77.4 L 80 74.0 L 84 70.3 L 88 66.4 L 92 62.6 L 96 59.1 L 100 56.3 L 104 54.4 L 108 53.6 L 112 54.2 L 116 56.1 L 120 59.6 L 124 64.5 L 128 70.9 L 132 78.6 L 136 87.4 L 140 97.1 L 144 107.5 L 148 118.1 L 152 128.7 L 156 139.0 L 160 148.6 L 164 157.3 L 168 164.9 L 172 171.2 L 176 176.1 L 180 179.5 L 184 181.4 L 188 182.0 L 192 181.3 L 196 179.6 L 200 177.1 L 204 174.0 L 208 170.7 L 212 167.3 L 216 164.2 L 220 161.5 L 224 159.4 L 228 158.0 L 232 157.5 L 236 157.8 L 240 158.8 L 244 160.4 L 248 162.6 L 252 164.9 L 256 167.3 L 260 169.5 L 264 171.2 L 268 172.1 L 272 172.0 L 276 170.8 L 280 168.2 L 284 164.4 L 288 159.1 L 292 152.4 L 296 144.6 L 300 135.7 L 304 126.0 L 308 115.8 L 312 105.3 L 316 94.8 L 320 84.8 L 324 75.5 L 328 67.1 L 332 59.9 L 336 54.2 L 340 49.9 L 344 47.2 L 348 46.1 L 352 46.5 L 356 48.2 L 360 51.1 L 364 54.9 L 368 59.4 L 372 64.2 L 376 69.2 L 380 74.1 L 384 78.5 L 388 82.4 L 392 85.5 L 396 87.9 L 400 89.3" fill="none" stroke="#9AA3B0" stroke-width="2.5"/>
+<path d="M 0 99.8 L 25 99.8 L 25 73.3 L 50 73.3 L 50 82.0 L 75 82.0 L 75 78.2 L 100 78.2 L 100 56.3 L 125 56.3 L 125 66.0 L 150 66.0 L 150 123.4 L 175 123.4 L 175 175.0 L 200 175.0 L 200 177.1 L 225 177.1 L 225 159.0 L 250 159.0 L 250 163.7 L 275 163.7 L 275 171.2 L 300 171.2 L 300 135.7 L 325 135.7 L 325 73.3 L 350 73.3 L 350 46.1 L 375 46.1 L 375 68.0 L 400 68.0 L 400 89.3" fill="none" stroke="#2D6BCF" stroke-width="2.5" stroke-linejoin="round"/>
+<g fill="#F08A3C"><circle cx="0" cy="99.8" r="4.5"/><circle cx="25" cy="73.3" r="4.5"/><circle cx="50" cy="82.0" r="4.5"/><circle cx="75" cy="78.2" r="4.5"/><circle cx="100" cy="56.3" r="4.5"/><circle cx="125" cy="66.0" r="4.5"/><circle cx="150" cy="123.4" r="4.5"/><circle cx="175" cy="175.0" r="4.5"/><circle cx="200" cy="177.1" r="4.5"/><circle cx="225" cy="159.0" r="4.5"/><circle cx="250" cy="163.7" r="4.5"/><circle cx="275" cy="171.2" r="4.5"/><circle cx="300" cy="135.7" r="4.5"/><circle cx="325" cy="73.3" r="4.5"/><circle cx="350" cy="46.1" r="4.5"/><circle cx="375" cy="68.0" r="4.5"/><circle cx="400" cy="89.3" r="4.5"/></g>
+<path d="M 100 216 L 100 228 M 100 222 L 125 222 M 125 216 L 125 228" fill="none" stroke="#15171C" stroke-width="1.5"/>
+</svg>
+<svg role="img" aria-label="The same signal sampled every large step, held between samples" width="400" height="230" viewBox="0 0 400 230" style="position: absolute; left: 532px; top: 164px; width: 400px; height: 230px; overflow: visible">
+<line x1="0" y1="205" x2="400" y2="205" stroke="#C9CDD4" stroke-width="1.5"/>
+<path d="M 0 99.8 L 4 92.2 L 8 85.8 L 12 80.7 L 16 77.0 L 20 74.6 L 24 73.4 L 28 73.3 L 32 74.1 L 36 75.5 L 40 77.4 L 44 79.3 L 48 81.2 L 52 82.7 L 56 83.7 L 60 84.1 L 64 83.6 L 68 82.3 L 72 80.2 L 76 77.4 L 80 74.0 L 84 70.3 L 88 66.4 L 92 62.6 L 96 59.1 L 100 56.3 L 104 54.4 L 108 53.6 L 112 54.2 L 116 56.1 L 120 59.6 L 124 64.5 L 128 70.9 L 132 78.6 L 136 87.4 L 140 97.1 L 144 107.5 L 148 118.1 L 152 128.7 L 156 139.0 L 160 148.6 L 164 157.3 L 168 164.9 L 172 171.2 L 176 176.1 L 180 179.5 L 184 181.4 L 188 182.0 L 192 181.3 L 196 179.6 L 200 177.1 L 204 174.0 L 208 170.7 L 212 167.3 L 216 164.2 L 220 161.5 L 224 159.4 L 228 158.0 L 232 157.5 L 236 157.8 L 240 158.8 L 244 160.4 L 248 162.6 L 252 164.9 L 256 167.3 L 260 169.5 L 264 171.2 L 268 172.1 L 272 172.0 L 276 170.8 L 280 168.2 L 284 164.4 L 288 159.1 L 292 152.4 L 296 144.6 L 300 135.7 L 304 126.0 L 308 115.8 L 312 105.3 L 316 94.8 L 320 84.8 L 324 75.5 L 328 67.1 L 332 59.9 L 336 54.2 L 340 49.9 L 344 47.2 L 348 46.1 L 352 46.5 L 356 48.2 L 360 51.1 L 364 54.9 L 368 59.4 L 372 64.2 L 376 69.2 L 380 74.1 L 384 78.5 L 388 82.4 L 392 85.5 L 396 87.9 L 400 89.3" fill="none" stroke="#9AA3B0" stroke-width="2.5"/>
+<path d="M 0 99.8 L 80 99.8 L 80 74.0 L 160 74.0 L 160 148.6 L 240 148.6 L 240 158.8 L 320 158.8 L 320 84.8 L 400 84.8 L 400 89.3" fill="none" stroke="#2D6BCF" stroke-width="2.5" stroke-linejoin="round"/>
+<g fill="#F08A3C"><circle cx="0" cy="99.8" r="4.5"/><circle cx="80" cy="74.0" r="4.5"/><circle cx="160" cy="148.6" r="4.5"/><circle cx="240" cy="158.8" r="4.5"/><circle cx="320" cy="84.8" r="4.5"/><circle cx="400" cy="89.3" r="4.5"/></g>
+<path d="M 80 216 L 80 228 M 80 222 L 160 222 M 160 216 L 160 228" fill="none" stroke="#15171C" stroke-width="1.5"/>
+</svg>
+<div style="position: absolute; left: 48px; top: 40px; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 14px; letter-spacing: 0.12em; color: #545B66">FIGURE 3</div>
+<div style="position: absolute; left: 48px; top: 64px; width: 904px; font-size: 30px; line-height: 38px; font-weight: 600">Discretization: the step size Δ sets the resolution</div>
+<div style="position: absolute; left: 72px; top: 140px; font-size: 22px; font-weight: 600">Small Δ <span style="font-weight: 400; color: #545B66">· many readings</span></div>
+<div style="position: absolute; left: 536px; top: 140px; font-size: 22px; font-weight: 600">Large Δ <span style="font-weight: 400; color: #545B66">· few readings</span></div>
+<div style="position: absolute; left: 168px; top: 396px; width: 26px; text-align: center; font-size: 18px; font-weight: 600">Δ</div>
+<div style="position: absolute; left: 639px; top: 396px; width: 26px; text-align: center; font-size: 18px; font-weight: 600">Δ</div>
+<div style="position: absolute; left: 48px; top: 452px; width: 904px; font-size: 19px; line-height: 27px; color: #383D45">Grey: the continuous signal. <span style="color: #C85A12; font-weight: 600">Orange dots</span>: one reading every Δ. <span style="color: #1F55AD; font-weight: 600">Blue steps</span>: each reading held until the next (zero-order hold). Text has no “between”, so Mamba treats each token as one step of size Δ.</div>
+</div>
+</body>
+</html>

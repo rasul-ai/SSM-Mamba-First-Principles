@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Figure 10: Inference memory as the text grows</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+</style>
+</head>
+<body>
+<div style="position: relative; width: 1000px; height: 540px; background: #FFFFFF; font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif; color: #15171C; overflow: hidden">
+<svg role="img" aria-label="Log-log chart: transformer cache memory rises with tokens, Mamba state stays at 80 KB; they cross at 20 tokens" width="800" height="280" viewBox="0 0 800 280" style="position: absolute; left: 120px; top: 168px; width: 800px; height: 280px; overflow: visible">
+<g stroke="#E4E7EB" stroke-width="1">
+<line x1="0" y1="0" x2="800" y2="0"/><line x1="0" y1="46.7" x2="800" y2="46.7"/><line x1="0" y1="93.3" x2="800" y2="93.3"/><line x1="0" y1="140" x2="800" y2="140"/><line x1="0" y1="186.7" x2="800" y2="186.7"/><line x1="0" y1="233.3" x2="800" y2="233.3"/>
+<line x1="160" y1="0" x2="160" y2="280"/><line x1="320" y1="0" x2="320" y2="280"/><line x1="480" y1="0" x2="480" y2="280"/><line x1="640" y1="0" x2="640" y2="280"/><line x1="800" y1="0" x2="800" y2="280"/>
+</g>
+<line x1="0" y1="280" x2="800" y2="280" stroke="#8A919C" stroke-width="1.5"/>
+<line x1="0" y1="0" x2="0" y2="280" stroke="#8A919C" stroke-width="1.5"/>
+<line x1="0" y1="251.9" x2="800" y2="18.6" stroke="#545B66" stroke-width="3" stroke-linecap="round"/>
+<line x1="0" y1="191.2" x2="800" y2="191.2" stroke="#2D6BCF" stroke-width="3.5" stroke-linecap="round"/>
+<circle cx="208.2" cy="191.2" r="6" fill="#FFFFFF" stroke="#15171C" stroke-width="2"/>
+</svg>
+<div style="position: absolute; left: 48px; top: 40px; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 14px; letter-spacing: 0.12em; color: #545B66">FIGURE 10</div>
+<div style="position: absolute; left: 48px; top: 64px; width: 904px; font-size: 30px; line-height: 38px; font-weight: 600">Memory carried while generating, as the text grows</div>
+<div style="position: absolute; left: 48px; top: 108px; width: 904px; font-size: 17px; line-height: 24px; color: #545B66">Same size as the model trained later (4 layers, d_model 128, float32). Both axes logarithmic.</div>
+<div style="position: absolute; left: 48px; top: 159px; width: 64px; text-align: right; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 14px; color: #545B66">1 GB</div>
+<div style="position: absolute; left: 48px; top: 205px; width: 64px; text-align: right; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 14px; color: #545B66">100 MB</div>
+<div style="position: absolute; left: 48px; top: 252px; width: 64px; text-align: right; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 14px; color: #545B66">10 MB</div>
+<div style="position: absolute; left: 48px; top: 299px; width: 64px; text-align: right; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 14px; color: #545B66">1 MB</div>
+<div style="position: absolute; left: 48px; top: 345px; width: 64px; text-align: right; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 14px; color: #545B66">100 KB</div>
+<div style="position: absolute; left: 48px; top: 392px; width: 64px; text-align: right; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 14px; color: #545B66">10 KB</div>
+<div style="position: absolute; left: 48px; top: 439px; width: 64px; text-align: right; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 14px; color: #545B66">1 KB</div>
+<div style="position: absolute; left: 100px; top: 458px; width: 40px; text-align: center; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 14px; color: #545B66">1</div>
+<div style="position: absolute; left: 260px; top: 458px; width: 40px; text-align: center; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 14px; color: #545B66">10</div>
+<div style="position: absolute; left: 420px; top: 458px; width: 40px; text-align: center; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 14px; color: #545B66">100</div>
+<div style="position: absolute; left: 580px; top: 458px; width: 40px; text-align: center; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 14px; color: #545B66">1k</div>
+<div style="position: absolute; left: 740px; top: 458px; width: 40px; text-align: center; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 14px; color: #545B66">10k</div>
+<div style="position: absolute; left: 900px; top: 458px; width: 40px; text-align: center; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 14px; color: #545B66">100k</div>
+<div style="position: absolute; left: 120px; top: 488px; width: 800px; text-align: center; font-size: 15px; color: #545B66">tokens of context</div>
+<div style="position: absolute; left: 240px; top: 236px; width: 360px; font-size: 17px; line-height: 22px; font-weight: 600; color: #383D45">Transformer cache: +4 KB every token</div>
+<div style="position: absolute; left: 640px; top: 372px; width: 280px; font-size: 17px; line-height: 22px; font-weight: 600; color: #1F55AD">Mamba state: 80 KB, always</div>
+<div style="position: absolute; left: 340px; top: 372px; width: 200px; font-size: 15px; line-height: 20px; color: #15171C">equal at 20 tokens</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Figure 11: Validation loss during training</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+</style>
+</head>
+<body>
+<div style="position: relative; width: 1000px; height: 540px; background: #FFFFFF; font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif; color: #15171C; overflow: hidden">
+<svg role="img" aria-label="Validation loss falling from about 1.78 to about 1.52 over 2000 steps for both Mamba-1 and Mamba-2" width="800" height="280" viewBox="0 0 800 280" style="position: absolute; left: 120px; top: 168px; width: 800px; height: 280px; overflow: visible">
+<g stroke="#E4E7EB" stroke-width="1">
+<line x1="0" y1="35" x2="800" y2="35"/><line x1="0" y1="105" x2="800" y2="105"/><line x1="0" y1="175" x2="800" y2="175"/><line x1="0" y1="245" x2="800" y2="245"/>
+<line x1="200" y1="0" x2="200" y2="280"/><line x1="400" y1="0" x2="400" y2="280"/><line x1="600" y1="0" x2="600" y2="280"/><line x1="800" y1="0" x2="800" y2="280"/>
+</g>
+<line x1="0" y1="280" x2="800" y2="280" stroke="#8A919C" stroke-width="1.5"/>
+<line x1="0" y1="0" x2="0" y2="280" stroke="#8A919C" stroke-width="1.5"/>
+<polyline points="100,55.3 200,116.9 300,160.3 400,175.7 500,196.0 600,227.5 700,233.8 800,230.3" fill="none" stroke="#2D6BCF" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="100,43.4 200,113.4 300,156.1 400,195.3 500,222.6 600,221.9 700,212.1 800,231.0" fill="none" stroke="#E07B24" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="9 6"/>
+<g fill="#2D6BCF"><circle cx="100" cy="55.3" r="5"/><circle cx="200" cy="116.9" r="5"/><circle cx="300" cy="160.3" r="5"/><circle cx="400" cy="175.7" r="5"/><circle cx="500" cy="196.0" r="5"/><circle cx="600" cy="227.5" r="5"/><circle cx="700" cy="233.8" r="5"/><circle cx="800" cy="230.3" r="5"/></g>
+<g fill="#FFFFFF" stroke="#E07B24" stroke-width="2.5"><circle cx="100" cy="43.4" r="5"/><circle cx="200" cy="113.4" r="5"/><circle cx="300" cy="156.1" r="5"/><circle cx="400" cy="195.3" r="5"/><circle cx="500" cy="222.6" r="5"/><circle cx="600" cy="221.9" r="5"/><circle cx="700" cy="212.1" r="5"/><circle cx="800" cy="231.0" r="5"/></g>
+</svg>
+<div style="position: absolute; left: 48px; top: 40px; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 14px; letter-spacing: 0.12em; color: #545B66">FIGURE 11</div>
+<div style="position: absolute; left: 48px; top: 64px; width: 904px; font-size: 30px; line-height: 38px; font-weight: 600">Validation loss while training on Tiny Shakespeare</div>
+<div style="position: absolute; left: 48px; top: 108px; width: 904px; font-size: 17px; line-height: 24px; color: #545B66">Two ~475K-parameter models with the script’s default settings, measured every 250 steps on a 2-core CPU.</div>
+<div style="position: absolute; left: 48px; top: 194px; width: 64px; text-align: right; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 14px; color: #545B66">1.8</div>
+<div style="position: absolute; left: 48px; top: 264px; width: 64px; text-align: right; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 14px; color: #545B66">1.7</div>
+<div style="position: absolute; left: 48px; top: 334px; width: 64px; text-align: right; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 14px; color: #545B66">1.6</div>
+<div style="position: absolute; left: 48px; top: 404px; width: 64px; text-align: right; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 14px; color: #545B66">1.5</div>
+<div style="position: absolute; left: 100px; top: 458px; width: 40px; text-align: center; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 14px; color: #545B66">0</div>
+<div style="position: absolute; left: 300px; top: 458px; width: 40px; text-align: center; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 14px; color: #545B66">500</div>
+<div style="position: absolute; left: 495px; top: 458px; width: 50px; text-align: center; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 14px; color: #545B66">1000</div>
+<div style="position: absolute; left: 695px; top: 458px; width: 50px; text-align: center; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 14px; color: #545B66">1500</div>
+<div style="position: absolute; left: 895px; top: 458px; width: 50px; text-align: center; font-family: 'IBM Plex Mono', Menlo, monospace; font-size: 14px; color: #545B66">2000</div>
+<div style="position: absolute; left: 120px; top: 488px; width: 800px; text-align: center; font-size: 15px; color: #545B66">training step</div>
+<div style="position: absolute; left: 48px; top: 140px; font-size: 15px; color: #545B66">validation loss (nats per character)</div>
+<div style="position: absolute; left: 560px; top: 196px; width: 360px; font-size: 17px; line-height: 26px"><span style="color: #1F55AD; font-weight: 700">━━ Mamba-1</span> best 1.516 · ~9 min</div>
+<div style="position: absolute; left: 560px; top: 226px; width: 360px; font-size: 17px; line-height: 26px"><span style="color: #C85A12; font-weight: 700">╍╍ Mamba-2</span> best 1.520 · ~5 min</div>
+</div>
+</body>
+</html>
